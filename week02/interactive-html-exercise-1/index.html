@@ -17,20 +17,20 @@
                 <legend>Personaliche Daten:</legend>
 
                 <label for="titel">Titel</label>
-                <input type="text" name="titel" id="titel" placeholder="Dr. hc">
+                <input type="text" name="titel" id="titel" placeholder="Dr. hc" required>
 
                 <label for="titel">Vorname</label>
-                <input type="text" name="Vorname" id="Vorname" placeholder="Peter">
+                <input type="text" name="Vorname" id="Vorname" placeholder="Peter" required>
 
                 <label for="titel">Nachname</label>
-                <input type="text" name="Nachname" id="Nachname" placeholder="Muster">
+                <input type="text" name="Nachname" id="Nachname" placeholder="Muster" required>
 
                 <label for="geschlecht">Geschlecht</label>
-                <input type="radio" name="geschlecht" id="m" value="M"><label for="m">M</label>
+                <input type="radio" name="geschlecht" id="m" value="M" required><label for="m">M</label>
                 <input type="radio" name="geschlecht" id="w" value="W"><label for="w">W</label>
 
                 <label for="sprache">Sprache</label>
-                <input type="radio" name="sprache" id="de" value="de"><label for="de">DE</label>
+                <input type="radio" name="sprache" id="de" value="de" required><label for="de">DE</label>
                 <input type="radio" name="sprache" id="fr" value="fr"><label for="fr">FR</label>
                 <input type="radio" name="sprache" id="it" value="it"><label for="it">IT</label>
 
@@ -39,7 +39,7 @@
                 <legend>Kontaktdaten:</legend>
 
                 <label for="tel">Telefon</label>
-                <input type="tel" name="tel" id="tel">
+                <input type="tel" name="tel" id="tel" required>
 
                 <label for="mobile">Mobile</label>
                 <input type="tel" name="mobile" id="mobile" placeholder="optional">
@@ -51,17 +51,17 @@
                 <input type="tel" name="fax" id="fax" placeholder="optional">
 
                 <label for="mail1">Mail 1</label>
-                <input type="email" name="mail1" id="mail1">
+                <input type="email" name="mail1" id="mail1" required>
 
                 <label for="mail1">Mail 2</label>
-                <input type="email" name="mail2" id="mail2">
+                <input type="email" name="mail2" id="mail2" placeholder="optional">
 
             </fieldset>
             <fieldset>
                 <legend>Adressdaten:</legend>
 
                 <label for="firma">Firma</label>
-                <input type="text" name="firma" id="firma">
+                <input type="text" name="firma" id="firma" required>
 
                 <label for="zusatz-firma">Zusatz Firma</label>
                 <input type="text" name="zusatz-firma" id="zusatz-firma" placeholder="optional">
@@ -70,7 +70,7 @@
                 <input type="text" name="homepage" id="homepage" placeholder="optional">
 
                 <label for="adresse">Adresse / Haus nummer</label>
-                <input type="text" name="adresse" id="adresse" placeholder="Musterstrasse">
+                <input type="text" name="adresse" id="adresse" placeholder="Musterstrasse" required>
                 <input type="number" name="adresse" id="adresse-nummer" placeholder="33">
 
                 <label for="zusatz-adresse">Zusatz Adresse</label>
@@ -81,11 +81,11 @@
 
                 <label for="plz">PLZ / Ort</label>
                 <input type="number" name="plz" id="plz" placeholder="8800">
-                <input type="text" name="plz" id="ort" placeholder="Musterstadt">
+                <input type="text" name="plz" id="ort" placeholder="Musterstadt" required>
 
                 <label for="kanton">Kanton / Land</label>
                 <input type="text" name="kanton" id="kanton" placeholder="ZH">
-                <input type="text" name="kanton" id="land" placeholder="Schweiz">
+                <input type="text" name="kanton" id="land" placeholder="Schweiz" required>
 
             </fieldset>
 
