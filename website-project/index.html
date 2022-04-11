@@ -12,10 +12,24 @@
         
         <main>
             <nav>
-                <h2>Some text:</h2>
+                <h2>Contents:</h2>
                 <ul>
-                    <li><a href="#">CLI and Github</a></li>
-                    <li><a href="#">HTML</a></li>
+                    <li><a href="#cli">CLI and Github</a>
+                        <ol>
+                            <li><a href="#commands">Common commands</a></li>
+                            <li><a href="#version-control">What is version control?</a></li>
+                            <li><a href="#git">Basic of Git</a></li>
+                            <li><a href="#git-github-diffrence">Git and Github diffrence</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#html">HTML</a>
+                        <ol>
+                            <li><a href="#">Basic HTML</a></li>
+                            <li><a href="#">Box model</a></li>
+                            <li><a href="#">CSS Flexbox</a></li>
+                            <li><a href="#">CSS Grid</a></li>
+                        </ol>
+                    </li>
                     <li><a href="#">CSS</a></li>
                     <li><a href="#">Javascript</a></li>
                     <li><a href="#">Advanced Javascript</a></li>
@@ -23,38 +37,39 @@
             </nav>
             <section class="main-content">
                 <header>
-                    <h2>Some header</h2>
+                    <h2>Welcome to my Website</h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, est veritatis possimus error et magnam illum explicabo! Officiis ut enim ipsum facere unde aspernatur perferendis ex repellat! Dolorum, a! Dolorem?
+                        I'd like to show you what I've learned on Powercoders bootcamp.<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis impedit error doloribus omnis, obcaecati culpa officia illo praesentium soluta fugiat in odio, consequuntur ut corporis a sunt nihil? Doloribus!
                     </p>
                 </header>
                 <!-- CLI and Github section -->
                 <section>
-                    <h3>CLI and Github</h3>
+                    <h3 id="cli">CLI and Github</h3>
                     <ul>
-                        <li><a href="#">Common commands</a></li>
-                        <li><a href="#">What is version control?</a></li>
-                        <li><a href="#">Basic of Git</a></li>
-                        <li><a href="#">Git and Github diffrence</a></li>
+                        <li><a href="#commands">Common commands</a></li>
+                        <li><a href="#version-control">What is version control?</a></li>
+                        <li><a href="#git">Basic of Git</a></li>
+                        <li><a href="#git-github-diffrence">Git and Github diffrence</a></li>
                     </ul>
                     <!-- Common commands -->
-                    <h4>Common commands</h4>
+                    <h4 id="commands">Common commands</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
                     </p>
                     <!-- What is version control -->
-                    <h4>What is version control?</h4>
+                    <h4 id="version-control">What is version control?</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
                     </p>
                     <!-- Basic of git -->
-                    <h4>Basic of git</h4>
+                    <h4 id="git">Basic of git</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
                     </p>
 
                     <!-- Git and Github diffrence -->
-                    <h4>Git and Github diffrence</h4>
+                    <h4 id="git-github-diffrence">Git and Github diffrence</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
                     </p>
@@ -63,7 +78,7 @@
                 </section>
                 <!-- HTML section -->
                 <section>
-                    <h3>HTML best practice</h3>
+                    <h3 id="html">HTML best practice</h3>
                     <ul>
                         <li><a href="#">Basic HTML</a></li>
                         <li><a href="#">Box model</a></li>
@@ -97,6 +112,6 @@
             </section>
         </main>
 
-        <script src="" async defer></script>
+        <script src="script/script.js" async defer></script>
     </body>
 </html>

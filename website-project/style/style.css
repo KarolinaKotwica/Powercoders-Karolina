@@ -15,7 +15,7 @@ a { text-decoration: none; }
 
 a:hover { color: #ffd100; }
 
-li { list-style: none; }
+li { list-style: none; margin-top: 5px; }
 
 p {
     color: #ccc;
@@ -28,6 +28,14 @@ p {
 main {
     margin-top: 15px;
     margin-bottom: 100px;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 16px;
 }
 
 header, section, nav {
@@ -50,6 +58,16 @@ nav {
     margin-bottom: 15px;
 }
 
+nav ul li {
+    font-size: 19px;
+}
+
+li::before {
+    content: "\2BC8";
+    color: #ffd100;
+    margin-right: 10px;
+}
+
 .main-content {
     max-width: 700px;
 }
@@ -63,6 +81,33 @@ h3 {
     font-size: 26px;
 }
 
+h3::before {
+    content: '\2BC0';
+    margin-right: 10px;
+    color: #ffd100;
+}
+
 section {
     margin-bottom: 15px;
+}
+
+
+/* Media Query */
+@media only screen and (min-width: 1200px) {
+    nav {
+        height: max-content;
+        position: fixed;
+        margin: 20px;
+    }
+
+    main {
+        display: flex;
+        margin: 58px;
+    }
+
+    .main-content {
+        margin-top: 20px;
+        margin-left: 24em;
+        max-width: 900px;
+    }
 }
