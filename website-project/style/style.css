@@ -15,14 +15,15 @@ a { text-decoration: none; }
 
 a:hover { color: #ffd100; }
 
-li { list-style: none; margin-top: 5px; }
+li { list-style: none; margin-top: 5px; font-size: 1.2em;}
 
 p {
     color: #ccc;
     line-height: 22px;
-    font-size: 14px;
+    font-size: 1.25em;
     font-weight: 300;
     margin-bottom: 15px;
+    padding: 10px;
 }
 
 main {
@@ -53,9 +54,22 @@ h2, h3, h4 {
     margin: 15px 0;
 }
 
+h4 {
+    font-size: large;
+}
+
 nav {
     max-height: 584px;
     margin-bottom: 15px;
+}
+
+nav ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section ul {
+    margin: 4em 0;
 }
 
 nav ul li {
@@ -91,6 +105,17 @@ section {
     margin-bottom: 15px;
 }
 
+.yellow {
+    color: #d5bc4e;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+.submenu {
+    display: none;
+}
 
 /* Media Query */
 @media only screen and (min-width: 1200px) {

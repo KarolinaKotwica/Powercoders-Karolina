@@ -12,10 +12,11 @@
         
         <main>
             <nav>
-                <h2>Contents:</h2>
+                <input type="checkbox" name="" id="">
+                <span></span>
                 <ul>
                     <li><a href="#cli">CLI and Github</a>
-                        <ol>
+                        <ol class="submenu">
                             <li><a href="#commands">Common commands</a></li>
                             <li><a href="#version-control">What is version control?</a></li>
                             <li><a href="#git">Basic of Git</a></li>
@@ -23,14 +24,21 @@
                         </ol>
                     </li>
                     <li><a href="#html">HTML</a>
-                        <ol>
+                        <ol class="submenu">
                             <li><a href="#">Basic HTML</a></li>
                             <li><a href="#">Box model</a></li>
                             <li><a href="#">CSS Flexbox</a></li>
                             <li><a href="#">CSS Grid</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">CSS</a>
+                        <ol class="submenu">
+                            <li><a href="#">Basic HTML</a></li>
+                            <li><a href="#">Box model</a></li>
+                            <li><a href="#">CSS Flexbox</a></li>
+                            <li><a href="#">CSS Grid</a></li>
+                        </ol>
+                    </li>
                     <li><a href="#">Javascript</a></li>
                     <li><a href="#">Advanced Javascript</a></li>
                 </ul>
@@ -53,14 +61,14 @@
                         <li><a href="#git-github-diffrence">Git and Github diffrence</a></li>
                     </ul>
                     <!-- Common commands -->
-                    <h4 id="commands">Common commands</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
-                    </p>
+                    <h4 id="commands">List of common commands</h4>
+                    <p id="replace">cd: change directory<br><br>cd ~: move to your root directory, no matter where you are<br><br>cs .. : move up to parent directory<br><br>ls: list all the files<br><br>ls -a: list all files and hidden files<br><br>ls -d letter: search by letter<br><br><span class='yellow'>find</span> word: find by word<br><br>mkdir: make the directory<br><br>rmdir: remove/delete directory<br><br>rm: remove a file<br><br>touch: create a file<br><br>pwd: find out the path of your current directory<br><br>cp origin destination: copy file to another place<br><br><span class='yellow'>code</span> name: open in code editor</p>
                     <!-- What is version control -->
                     <h4 id="version-control">What is version control?</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        Version control is a tool that allow you to collaborate and track and revert changes. For example when we edit a file version control can help you determinate what exactly who changed it and why.<br>
+                        if something goes wrong you can revert your changes and go back to the last version.<br>
+                        
                     </p>
                     <!-- Basic of git -->
                     <h4 id="git">Basic of git</h4>
@@ -81,6 +89,37 @@
                     <h3 id="html">HTML best practice</h3>
                     <ul>
                         <li><a href="#">Basic HTML</a></li>
+                        <li><a href="#">Box model</a></li>
+                    </ul>
+                    <!-- Basic HTML -->
+                    <h4>Basic HTML</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                    </p>
+
+                    <!-- Box model -->
+                    <h4>Box model</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                    </p>
+
+                    <!-- CSS Flexbox -->
+                    <h4>CSS Flexbox</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                    </p>
+
+                    <!-- CSS Grid -->
+                    <h4>CSS Grid</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                    </p>
+                </section>
+
+                <section>
+                    <h3 id="html">CSS</h3>
+                    <ul>
+                        <li><a href="#">Best practice</a></li>
                         <li><a href="#">Box model</a></li>
                         <li><a href="#">CSS Flexbox</a></li>
                         <li><a href="#">CSS Grid</a></li>
