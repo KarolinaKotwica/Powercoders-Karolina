@@ -13,7 +13,7 @@ function changeColor() {
 
     var replacement = "<span class='yellow'>repla</span>";
 
-    var words = ["ls", "cp", "cd", "cd ~", "-a", "-d", "cs ..", "mkdir", "rmdir", "rm", "touch", "pwd"];
+    var words = ["ls", "cp", "cd", "cd ~", "-a", "-d", "cs ..", "mkdir", "rmdir", "rm", "touch", "pwd", "mv", "cat"];
 
     for (i=0;i<words.length;i++){
 
@@ -35,7 +35,7 @@ function makeCursive() {
 
     var replacement = "<span class='cursive'>repla</span>";
 
-    var words = ["name", "origin", "destination", "word"];
+    var words = ["name", "origin", "destination", "word", "file_old", "file_new"];
 
     for (i=0;i<words.length;i++){
 

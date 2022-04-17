@@ -12,140 +12,257 @@
         
         <main>
             <nav>
-                <input type="checkbox" name="" id="">
-                <span></span>
-                <ul>
-                    <li><a href="#cli">CLI and Github</a>
+                <!-- <input id="menu_toggle" type="checkbox">
+                <label class="menu_btn" for="menu_toggle">
+                    <span></span>
+                </label> -->
+                
+                <ul id="main-nav">
+                    <li><a class="menu_item" href="#cli">CLI and Github</a>
                         <ol class="submenu">
-                            <li><a href="#commands">Common commands</a></li>
                             <li><a href="#version-control">What is version control?</a></li>
+                            <li><a href="#commands">Common commands</a></li>
                             <li><a href="#git">Basic of Git</a></li>
                             <li><a href="#git-github-diffrence">Git and Github diffrence</a></li>
+                            <li><a href="#configure">How to configure local repo to sync</a></li>
                         </ol>
                     </li>
-                    <li><a href="#html">HTML</a>
+                    <li><a class="menu_item" href="#html">HTML</a>
                         <ol class="submenu">
-                            <li><a href="#">Basic HTML</a></li>
-                            <li><a href="#">Box model</a></li>
-                            <li><a href="#">CSS Flexbox</a></li>
-                            <li><a href="#">CSS Grid</a></li>
+                            <li><a href="#what-is-html">What is HTML?</a></li>
+                            <li><a href="#inline-block">Inline and block elements in HTML5</a></li>
+                            <li><a href="#semantic">Semantic Block-Level Tags</a></li>
+                            <li><a href="#interview-question">HTML Interview Questions</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">CSS</a>
+                    <li><a class="menu_item" href="#">CSS</a>
                         <ol class="submenu">
-                            <li><a href="#">Basic HTML</a></li>
-                            <li><a href="#">Box model</a></li>
-                            <li><a href="#">CSS Flexbox</a></li>
-                            <li><a href="#">CSS Grid</a></li>
+                            <li><a href="#css">What is CSS?</a></li>
+                            <li><a href="#flexbox">Flexbox</a></li>
+                            <li><a href="#grid">Grid</a></li>
+                            <li><a href="#interview-question-css">CSS Interview Questions</a></li>
                         </ol>
                     </li>
-                    <li><a href="#">Javascript</a></li>
-                    <li><a href="#">Advanced Javascript</a></li>
+                    <li><a class="menu_item" href="#">Javascript</a></li>
+                    <li><a class="menu_item" href="#">Advanced Javascript</a></li>
                 </ul>
             </nav>
             <section class="main-content">
                 <header>
-                    <h2>Welcome to my Website</h2>
+                    <h2>Jakiś tytuł</h2>
                     <p>
-                        I'd like to show you what I've learned on Powercoders bootcamp.<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis impedit error doloribus omnis, obcaecati culpa officia illo praesentium soluta fugiat in odio, consequuntur ut corporis a sunt nihil? Doloribus!
+                        Hi, my name is Karolina. 28th of March 2022 I started <a class="yellow" href="https://powercoders.org/" target="_blank">Powercoders bootcamp</a>. Powercoders is a work integration program for refugees & migrants. It consists of a coding bootcamp of 13 weeks and an internship that lasts 6 to 12 months. The ultimate goal of Powercoders is the permanent placement of trained refugees in IT-companies and IT-departments. Talented refugees & migrants, independent from their place of living, as long as they are allowed to travel can participate in this program. I am the one of the 26 lucky people. I'd like to show you what I've learned during this 13-weeks. Let's go!
                     </p>
                 </header>
                 <!-- CLI and Github section -->
                 <section>
                     <h3 id="cli">CLI and Github</h3>
                     <ul>
-                        <li><a href="#commands">Common commands</a></li>
                         <li><a href="#version-control">What is version control?</a></li>
+                        <li><a href="#commands">Common commands</a></li>
                         <li><a href="#git">Basic of Git</a></li>
                         <li><a href="#git-github-diffrence">Git and Github diffrence</a></li>
+                        <li><a href="#configure">How to configure local repo to sync</a></li>
                     </ul>
-                    <!-- Common commands -->
-                    <h4 id="commands">List of common commands</h4>
-                    <p id="replace">cd: change directory<br><br>cd ~: move to your root directory, no matter where you are<br><br>cs .. : move up to parent directory<br><br>ls: list all the files<br><br>ls -a: list all files and hidden files<br><br>ls -d letter: search by letter<br><br><span class='yellow'>find</span> word: find by word<br><br>mkdir: make the directory<br><br>rmdir: remove/delete directory<br><br>rm: remove a file<br><br>touch: create a file<br><br>pwd: find out the path of your current directory<br><br>cp origin destination: copy file to another place<br><br><span class='yellow'>code</span> name: open in code editor</p>
+
                     <!-- What is version control -->
                     <h4 id="version-control">What is version control?</h4>
                     <p>
                         Version control is a tool that allow you to collaborate and track and revert changes. For example when we edit a file version control can help you determinate what exactly who changed it and why.<br>
                         if something goes wrong you can revert your changes and go back to the last version.<br>
-                        
                     </p>
+
+                    <!-- Common commands -->
+                    <h4 id="commands">List of common commands</h4>
+                    <p>On the command line, help is always at hand: you can either type: man command --help</p>
+                    <p>If you plan to run a series of commands after another, it might be useful to combine them instead of waiting for each command to finish before typing the next one. To do so, simply separate the commands with a semicolon (;) on the same line</p>
+                    <p>Whenever entering paths and file names, the TAB key comes in very handy. It autocompletes what you have written,reducing typos quite efficiently</p>
+                    <p>The command line keeps a history of the most recent commands you executed. By pressing the ARROW UP key, you can step through the last called commands (starting with the most recent). ARROW DOWN will move forward in history towards the most recent call. You can also type 'history', that show you all your history.</p>
+                    <hr>
+                    <p id="replace">
+                        cd: change directory<br><br>cd ~: move to your root directory, no matter where you are<br><br>cd .. : move up to parent directory<br><br>ls: list all the files<br><br>ls -a: list all files and hidden files<br><br>ls -d letter: search by letter<br><br><span class='yellow'>find</span> word: find by word<br><br>mkdir: create new directory<br><br>rmdir: remove/delete directory<br><br>rm: remove a file<br><br>touch: create a file<br><br>pwd: find out the path of your current directory<br><br>cp origin destination: copy file to another place<br><br><span class='yellow'>code</span> name: open in code editor<br><br>mv file_old file_new: rename<br><br>mv file directory: move to another directory<br><br>cat file: output the contents<br><br><span class="yellow">clear</span>: clear the command line
+                    </p>
+                    
                     <!-- Basic of git -->
                     <h4 id="git">Basic of git</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        <span class='yellow'>$ git config --global user.name "Your Name Here" </span>: Sets the default name for Git to use when you commit<br><br>
+                        <span class='yellow'>git config --global user.email "your_email@powercoders.org"</span> : sets the default email for Git to use when you commit<br><br>
+                        <span class='yellow'>$ git config --global init.defaultbranch "main" </span>: sets the default branch to the name "main" instead of "master"<br><br>
+                        <span class='yellow'>$ git config --global code.editor "code wait"</span> : sets the default editor to VSC
+
+                    </p>
+                    <hr>
+                    <p>
+                        <span class='yellow'>git init</span> is a command used to transform repository<br><br>
+                        <span class='yellow'>git status</span> is used to display the state of the repository and staging area<br><br>
+                        <span class='yellow'>git diff</span> is used to show the diffrence between what's in the working directory
+                        and what's in the file.<br><br>
+                    </p>
+                    <hr>
+                    <p>
+                        <span class='yellow'>git add .</span> is a command used to add a files that are in the working directory to the staging area<br><br>
+                        <span class='yellow'>git commit -m "some message"</span> is a command used to add all files that are staged to the local repository<br><br>
+                        <span class='yellow'>git push</span> is a command used to add all committed files in the local repository to the remote repository. So in the remote repository, all files and changes will be visible to anyone with access to the remote repository<br><br>
+                        <span class='yellow'>git merge</span> is a command used to get the files from the local repository into the working directory<br><br>
+                        <span class='yellow'>git pull</span> is command used to get files from the remote repository directly into the working directory<br><br>
                     </p>
 
                     <!-- Git and Github diffrence -->
                     <h4 id="git-github-diffrence">Git and Github diffrence</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        Git is a Version control system software that you can run on your own computer, or on a server and allows you to communicate with Github and push/pull your files
+                        <br><br>
+                        GitHub is a Cloud-based service for storing, sharing, and collaborating on projects managed with Git and is the server, where your team projects are hosted
+                    </p>
+
+                    <!-- How to configure local repo to sync -->
+                    <h4 id="configure">How to configure local repo to sync</h4>
+                    <p>
+                        First of all, you have to create new repository on Github. After that, you can see link to your repository and you should copy this. Open terminal for example in Visual Studio Code and enter:<br><br>
+                        <span class='yellow'>$ git remote add origin https://TOKENgithub.com/user/name-of-repository.git</span><br>and next:<br>
+                        <span class='yellow'>$ git remote -v</span> to view configured remotes<br>
+                        <span class='yellow'>git push -u origin main </span>- you only have to do that the first time and then can use
+                        push and pull without argument<br><span class='yellow'>git push </span>- after that
                     </p>
 
 
                 </section>
                 <!-- HTML section -->
                 <section>
-                    <h3 id="html">HTML best practice</h3>
+                    <h3 id="html">HTML</h3>
                     <ul>
-                        <li><a href="#">Basic HTML</a></li>
-                        <li><a href="#">Box model</a></li>
+                        <li><a href="#what-is-html">What is HTML?</a></li>
+                        <li><a href="#inline-block">Inline and block elements in HTML5</a></li>
+                        <li><a href="#semantic">Semantic Block-Level Tags</a></li>
+                        <li><a href="#interview-question">HTML Interview Questions</a></li>
                     </ul>
-                    <!-- Basic HTML -->
-                    <h4>Basic HTML</h4>
+                    <!-- What is HTML -->
+                    <h4 id="what-is-html">What is HTML?</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        HTML is the standard markup language for creating Web pages.
                     </p>
 
-                    <!-- Box model -->
-                    <h4>Box model</h4>
+                    <!-- Inline and block elements in HTML5 -->
+                    <h4 id="inline-block">Inline and block elements in HTML5</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        Inline elements just take up the space that is absolutely necessary for the content and does not start from a new line. Example:<br><br>
+                        &#60;span&#62;, &#60;a&#62;, &#60;strong&#62;, &#60;img&#62;, &#60;button&#62;, &#60;em&#62;, &#60;select&#62;, &#60;abbr&#62;, &#60;label&#62;, &#60;sub&#62;, &#60;cite&#62;, &#60;abbr&#62;, &#60;script&#62;, &#60;label&#62;, &#60;i&#62;, &#60;input&#62;, &#60;output&#62;, &#60;q&#62;, etc.
+                    </p>
+                        <hr>
+                    <p>
+                        Block elements start on a new line and consume the full width of the page available. Example:<br><br>
+                        &#60;div&#62;, &#60;p&#62;, &#60;header&#62;, &#60;footer&#62;, &#60;h1&#62;...&#60;h6&#62;, &#60;form&#62;, &#60;table&#62;, &#60;canvas&#62;, &#60;video&#62;, &#60;blockquote&#62;, &#60;pre&#62;, &#60;ul&#62;, &#60;ol&#62;, &#60;figcaption&#62;, &#60;figure&#62;, &#60;hr&#62;, &#60;article&#62;, &#60;section&#62;, etc.
                     </p>
 
-                    <!-- CSS Flexbox -->
-                    <h4>CSS Flexbox</h4>
+                    <!-- Semantic Block-Level Tags -->
+                    <h4 id="semantic">Semantic Block-Level Tags</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        <b>&#60;header&#62;</b> for introduction of the page, e.g. logo, page headline, content summary.<br>
+                        <b>&#60;nav&#62;</b> as container for navigational elements, links to access content within the website<br>
+                        <b>&#60;main&#62;</b> for the main and most important content of a page<br>
+                        <b>&#60;section&#62;</b> for thematic grouping of content, e.g. news, team<br>
+                        <b>&#60;article&#62;</b> is independent, self-contained content, e.g. news entry, blog entry<br>
+                        <b>&#60;aside&#62;</b> for less important content, e.g. in a sidebar or overlay<br>
+                        <b>&#60;footer&#62;</b> for information at the end of document, e.g. copyright, address, author, legal info<br>
+                    </p>
+                    <hr>
+                    <p>
+                        &#60;h&#62;-tags can be within different block-level elements, e.g. header, main, article, section, footer. Use hierarchical order of headlines, e.g.<br><br>
+                        &#60;h1&#62; in the &#60;header&#62;<br>
+                        &#60;h2&#62; in the &#60;section&#62;<br>
+                        &#60;h3&#62; in the &#60;article&#62;<br><br>
+                        Each article should contain at least 1 headline.
+                        Each page should only have 1 &#60;h1&#62;-tag.
+                        Don't leave a number out, e.g. first &#60;h1&#62;, then &#60;h3&#62;.
                     </p>
 
-                    <!-- CSS Grid -->
-                    <h4>CSS Grid</h4>
+                    <!-- HTML interview question -->
+                    <h4 id="interview-question">HTML Interview Questions</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        <span class='yellow'>Are the HTML tags and elements the same thing?</span><br>
+                        HTML tags and elements are not the same thing. A HTML tag is like a container for either content or other HTML tags. A HTML element consists of the start tag + content tag + end tag. Some HTML tags do not have end tags like img hence in those cases HTML element will consist of start tag + content.<br><br>
+                        <span class='yellow'>What are void elements in HTML?</span><br>
+                        HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example: br, img, hr, etc.<br><br>
+                        <span class='yellow'>What are HTML Entities?</span><br>
+                        In HTML some characters are reserved like &ldquo;&#60;&ldquo;, &ldquo;&#62;&ldquo;, &ldquo;&#38;&ldquo;, etc. To use these characters in our webpage we need to use the character entities called HTML Entities<br><br>
+                        <span class='yellow'>What is the difference between &#60;strong&#62;, &#60;b&#62; tags and &#60;em&#62;, &#60;i&#62; tags?</span><br>
+                        The effect on a normal webpage is the same. &#60;b&#62; and &#60;i&#62; tags stands for bold and italic. These two tags only apply font styling. &#60;strong&#62; and &#60;em&#62; are semantic. Hence these are preferred in modern web pages.<br><br>
+                        <span class='yellow'>What is the difference between “display: none” and “visibility: hidden”, when used as attributes to the HTML element?</span><br>
+                        When we use the attribute “visibility: hidden” for an HTML element then that element will be hidden from the webpage but still takes up space. Whereas, if we use the “display: none” attribute for an HTML element then the element will be hidden, and also it will not take up any space on the webpage<br><br>
+                        <span class='yellow'>When to use scripts in the head and when to use scripts in the body?</span><br>
+                        If the scripts contain some event-triggered functions or jquery library then we should use them in the head section. If the script writes the content on the page or is not inside a function then it should be placed inside the body section at the bottom<br><br>
+                        <span class='yellow'>Is the &#60;datalist&#62; tag and &#60;select&#62; tag same?</span><br>
+                        No, these tags are diffrent.  In the case of  &#60;select&#62; tag a user will have to choose from a list of options, whereas  &#60;datalist&#62; when used along with the  &#60;input&#62; tag provides a suggestion that the user selects one of the options given or can enter some entirely different value.<br><br>
+                        <span class='yellow'>Is drag and drop possible using HTML5 and how?</span><br>
+                        Yes, in HTML5 we can drag and drop an element. This can be achieved using the drag and drop-related events to be used with the element which we want to drag and drop.<br><br>
+                        <span class='yellow'>What type of audio files can be played using HTML5?</span><br>
+                        HTML5 supports the following three types of audio file formats: Mp3, WAV, Ogg.
                     </p>
                 </section>
 
                 <section>
                     <h3 id="html">CSS</h3>
                     <ul>
-                        <li><a href="#">Best practice</a></li>
-                        <li><a href="#">Box model</a></li>
-                        <li><a href="#">CSS Flexbox</a></li>
-                        <li><a href="#">CSS Grid</a></li>
+                        <li><a href="#css">What is CSS?</a></li>
+                        <li><a href="#flexbox">Flexbox</a></li>
+                        <li><a href="#grid">Grid</a></li>
+                        <li><a href="#interview-question-css">CSS Interview Questions</a></li>
                     </ul>
-                    <!-- Basic HTML -->
-                    <h4>Basic HTML</h4>
+                    <!-- What is CSS? -->
+                    <h4 id="css">What is CSS?</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        CSS stands for Cascading Style Sheet. It is a style sheet language that determines how the elements/contents in the page are looked/shown. CSS is used to develop a consistent look and feel for all the pages.
                     </p>
 
-                    <!-- Box model -->
-                    <h4>Box model</h4>
+                     <!-- Flexbox -->
+                     <h4 id="fexbox">Flexbox</h4>
+                     <p>
+                        Flexbox is an easy way to create responsive websites as scalability is built-in.<br>
+                        <b>display: flex;</b> to create a flex container.<br>
+                        <b>justify-content</b> to define the horizontal alignment of
+                        items.
+                     </p>
+
+                      <!-- Grid -->
+                    <h4 id="grid">Grid</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        CSS stands for Cascading Style Sheet. It is a style sheet language that determines how the elements/contents in the page are looked/shown. CSS is used to develop a consistent look and feel for all the pages.
                     </p>
 
-                    <!-- CSS Flexbox -->
-                    <h4>CSS Flexbox</h4>
+                    <!-- CSS Interview Questions -->
+                    <h4 id="interview-question-css">CSS Interview Questions</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
-                    </p>
-
-                    <!-- CSS Grid -->
-                    <h4>CSS Grid</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a, dicta expedita officia molestias perferendis, hic laboriosam eaque enim eligendi sapiente facere laborum omnis at exercitationem cupiditate, aspernatur ducimus voluptatibus?  
+                        <span class='yellow'>What is the Box model in CSS? Which CSS properties are a part of it?</span><br>
+                        A rectangle box is wrapped around every HTML element. The box model is used to determine the height and width of the rectangular box. The CSS Box consists of Width and height (or in the absence of that, default values and the content inside), padding, borders, margin.<br><br>
+                        <b>Content</b>:  Actual Content of the box where the text or image is placed.<br><br>
+                        <b>Padding</b>: Area surrounding the content (Space between the border and content).<br><br>
+                        <b>Border</b>: Area surrounding the padding.<br><br>
+                        <b>Margin</b>: Area surrounding the border.
+                        <img class="image-responsive" src="boxmodel.png" alt="boxmodel image">
+                        <span class='yellow'>What are the advantages of using CSS?</span><br>
+                        <b>Separation of content from presentation</b> - CSS provides a way to present the same content in multiple presentation formats in mobile or desktop or laptop.<br>
+                        <b>Easy to maintain</b> - CSS, built effectively can be used to change the look and feel complete by making small changes. To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.<br>
+                        <b>Bandwidth </b>- Used effectively, the style sheets will be stored in the browser cache and they can be used on multiple pages, without having to download again.<br><br>
+                        <span class='yellow'>What is a CSS Preprocessor?</span><br>
+                        A CSS Preprocessor is a tool used to extend the basic functionality of default vanilla CSS through its own scripting language. It helps us to use complex logical syntax like - variables, functions, mixins, code nesting, and inheritance to name a few, supercharging your vanilla CSS.<br><br>
+                        <span class='yellow'>What are Pseudo elements and Pseudo classes?</span><br>
+                        <b>Pseudo-elements</b> allows us to create items that do not normally exist in the document tree. Examples:<br>
+                        ::before<br>
+                        ::after<br>
+                        ::first-letter<br>
+                        ::first-line<br>
+                        ::selection<br><br>
+                        <b>Pseudo-classes</b> select regular elements but under certain conditions like when the user is hovering over the link. Examples:<br>
+                        :link<br>
+                        :visited<br>
+                        :hover<br>
+                        :active<br>
+                        :focus<br><br>
+                        <span class='yellow'>Does margin-top or margin-bottom have an effect on inline elements?</span><br>
+                        No, it doesn’t affect the inline elements. Inline elements flow with the contents of the page.<br><br>
+                        <span class='yellow'>What is cascading in CSS?</span><br>
+                        “Cascading” refers to the process of going through the style declarations and defining weight or importance to the styling rules that help the browser to select what rules have to be applied in times of conflict. The conflict here refers to multiple rules that are applicable to a particular HTML element. In such cases, we need to let the browser know what style needs to be applied to the element. This is done by cascading down the list of style declarations elements.<br><br>
                     </p>
                 </section>
             </section>
