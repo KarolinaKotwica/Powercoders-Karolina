@@ -9,49 +9,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-function changeColor() {
+//// scroll up button /////
+const button = document.getElementById('scrollUp');
 
-    var replacement = "<span class='yellow'>repla</span>";
+window.onscroll = function() {
+    showButton();
+};
 
-    var words = ["ls", "cp", "cd", "cd ~", "-a", "-d", "cs ..", "mkdir", "rmdir", "rm", "touch", "pwd", "mv", "cat"];
-
-    for (i=0;i<words.length;i++){
-
-        var str = document.getElementById("replace").innerHTML;
-
-        var replacethis = words[i];
-
-        var re = new RegExp(replacethis,"g");
-
-        var txt = str.replace(re, replacement.replace("repla",replacethis) );
-
-        document.getElementById("replace").innerHTML = txt;
-
-    }
-
+function showButton() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    button.style.opacity = 1;
+  } else {
+    button.style.opacity = 0;
+  }
 }
 
-function makeCursive() {
+button.addEventListener('click', () => {
+    window.scroll({top: 0, behavior: "smooth"})
+})
 
-    var replacement = "<span class='cursive'>repla</span>";
-
-    var words = ["name", "origin", "destination", "word", "file_old", "file_new"];
-
-    for (i=0;i<words.length;i++){
-
-        var str = document.getElementById("replace").innerHTML;
-
-        var replacethis = words[i];
-
-        var re = new RegExp(replacethis,"g");
-
-        var txt = str.replace(re, replacement.replace("repla",replacethis) );
-
-        document.getElementById("replace").innerHTML = txt;
-
-    }
-
-}
-
-makeCursive();
-changeColor();
+/// end scroll up button ///
