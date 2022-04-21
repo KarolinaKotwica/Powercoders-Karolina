@@ -13,6 +13,16 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
 }
 
+code {
+    color: #d5bc4e;
+    margin-right: 20px;
+    font-size: 1.4em;
+}
+
+samp {
+    color: #c1ae5b;
+}
+
 a { text-decoration: none; }
 
 a:hover { color: #f8d568; }
@@ -42,7 +52,14 @@ header {
 }
 
 header p {
-    font-size: 16px;
+    font-size: 17px;
+    margin: 25px 0;
+}
+
+header img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 header, section, nav {
@@ -70,7 +87,9 @@ h2, h3, h4 {
 }
 
 h4 {
-    font-size: large;
+    font-size: 1.4em;
+    margin: 2em;
+    text-align: center;
 }
 
 hr {
@@ -251,6 +270,29 @@ section {
     cursor: pointer;
 }
 
+.panel {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+  
+.accordion {
+    padding: 10px 15px;
+    font-size: 26px;
+    outline: none;
+    border: none;
+    background: none;
+    color: #c1ae5b;
+    text-align: left;
+}
+
+.accordion:hover {
+    cursor: pointer;
+}
+
 /* Media Query */
 @media only screen and (min-width: 1200px) {
     nav {
@@ -260,10 +302,15 @@ section {
         background-color: #1b1b1b;
         border-radius: 20px;
         border: 1px solid #363535;
+        padding: 1.6em;
     }
 
     nav ul {
         padding: 1em;
+    }
+
+    nav ul li {
+        font-size: 17px;
     }
 
     main {
@@ -294,5 +341,6 @@ section {
         display: initial;
         position: relative;
         visibility: visible;
+        padding: 0;
     }
 }
