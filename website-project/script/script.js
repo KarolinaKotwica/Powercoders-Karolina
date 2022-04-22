@@ -46,3 +46,21 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+/// close hamburger menu
+
+let menuItem = document.querySelectorAll('.menu_item');
+
+for(var i = 0; i < menuItem.length; i++) {
+
+  menuItem[i].addEventListener('click', (e) => {
+    e.preventDefault();
+
+    let checkbox = document.getElementById('menu_toggle');
+
+      if (checkbox.checked === true) {
+          checkbox.checked = false;
+      }
+  })
+
+}

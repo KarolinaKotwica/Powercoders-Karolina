@@ -20,35 +20,35 @@
                 <ul class="menu_box" id="main-nav">
                     <li class="menu_item"><a class="menu_item" href="#cli">CLI and Github</a>
                         <ol class="submenu">
-                            <li><a href="#version-control">What is version control?</a></li>
-                            <li><a href="#commands">Common commands</a></li>
-                            <li><a href="#git">Basic of Git</a></li>
-                            <li><a href="#git-github-diffrence">Git and Github diffrence</a></li>
-                            <li><a href="#configure">How to configure local repo to sync</a></li>
+                            <li class="menu_item"><a href="#version-control">What is version control?</a></li>
+                            <li class="menu_item"><a href="#commands">Common commands</a></li>
+                            <li class="menu_item"><a href="#git">Basic of Git</a></li>
+                            <li class="menu_item"><a href="#git-github-diffrence">Git and Github diffrence</a></li>
+                            <li class="menu_item"><a href="#configure">How to configure local repo to sync</a></li>
                         </ol>
                     </li>
                     <li class="menu_item"><a class="menu_item" href="#html">HTML</a>
                         <ol class="submenu">
-                            <li><a href="#what-is-html">What is HTML?</a></li>
-                            <li><a href="#inline-block">Inline and block elements in HTML5</a></li>
-                            <li><a href="#semantic">Semantic Block-Level Tags</a></li>
-                            <li><a href="#interview-question">HTML Interview Questions</a></li>
+                            <li class="menu_item"><a href="#what-is-html">What is HTML?</a></li>
+                            <li class="menu_item"><a href="#inline-block">Inline and block elements in HTML5</a></li>
+                            <li class="menu_item"><a href="#semantic">Semantic Block-Level Tags</a></li>
+                            <li class="menu_item"><a href="#interview-question">HTML Interview Questions</a></li>
                         </ol>
                     </li>
                     <li class="menu_item"><a class="menu_item" href="#css">CSS</a>
                         <ol class="submenu">
-                            <li><a href="#what-is-css">What is CSS?</a></li>
-                            <li><a href="#flexbox">Flexbox</a></li>
-                            <li><a href="#grid">Grid</a></li>
-                            <li><a href="#interview-question-css">CSS Interview Questions</a></li>
+                            <li class="menu_item"><a href="#what-is-css">What is CSS?</a></li>
+                            <li class="menu_item"><a href="#flexbox">Flexbox</a></li>
+                            <li class="menu_item"><a href="#grid">Grid</a></li>
+                            <li class="menu_item"><a href="#interview-question-css">CSS Interview Questions</a></li>
                         </ol>
                     </li>
                     <li class="menu_item"><a class="menu_item" href="#javascript">Javascript</a>
                         <ol class="submenu">
-                            <li><a href="#what-is-javascript">What is Javascript?</a></li>
-                            <li><a href="#data-types">Data Types in JS</a></li>
-                            <li><a href="#let-var">let vs. var</a></li>
-                            <li><a href="#interview-question-js">JS Interview Questions</a></li>
+                            <li class="menu_item"><a href="#what-is-javascript">What is Javascript?</a></li>
+                            <li class="menu_item"><a href="#data-types">Data Types in JS</a></li>
+                            <li class="menu_item"><a href="#let-var">let vs. var</a></li>
+                            <li class="menu_item"><a href="#interview-question-js">JS Interview Questions</a></li>
                         </ol>
                     </li>
                     <li class="menu_item"><a class="menu_item" href="#javascript">Advanced Javascript</a>
@@ -68,7 +68,7 @@
                     <p>
                         Hi, my name is Karolina. 28th of March 2022 I started <a class="yellow" href="https://powercoders.org/" target="_blank">Powercoders bootcamp</a>. Powercoders is a work integration program for refugees & migrants. It consists of a coding bootcamp of 13 weeks and an internship that lasts 6 to 12 months. The ultimate goal of Powercoders is the permanent placement of trained refugees in IT-companies and IT-departments. Talented refugees & migrants, independent from their place of living, as long as they are allowed to travel can participate in this program. I am the one of the 26 lucky people. I'd like to show you what I've learned during this 13-weeks. Let's go!
                     </p>
-                    <img src="programming.png" alt="">
+                    <!-- <img src="programming.png" alt=""> -->
                 </header>
                 <!-- CLI and Github section -->
                 <section>
@@ -270,18 +270,31 @@
 
                      <!-- Flexbox -->
                      <h4 id="flexbox">Flexbox</h4>
-                     <p>
-                        Flexbox is an easy way to create responsive websites as scalability is built-in.<br>
-                        <b>display: flex;</b> to create a flex container.<br>
-                        <b>justify-content</b> to define the horizontal alignment of
-                        items.
-                     </p>
+                        
+                     <p>Flexbox is an easy way to create responsive websites as scalability is built-in.</p>
+
+                    <p>You can use <code>display: flex</code> to create a flex container</p>
+                    <p><code>justify-content</code> define the horizontal alignment of items</p>
+                    <p><code>align-items</code> define the vertical alignment of items</p>
+                    <p><code>flex-direction</code> if you need columns instead of rows</p>
+                    <p><code>row-reverse / column-reverse</code> you can use this to flip item order</p>
+                    <p><code>order</code> customize the order of individual elements</p>
+                    <p><code>align-self</code> vertically align individual items</p>
 
                       <!-- Grid -->
                     <h4 id="grid">Grid</h4>
-                    <p>
-                        CSS stands for Cascading Style Sheet. It is a style sheet language that determines how the elements/contents in the page are looked/shown. CSS is used to develop a consistent look and feel for all the pages.
-                    </p>
+
+                    <p>It is the latest CSS layout technique.</p>
+
+                    <p>You can use <code>display: grid</code> to create grid container</p>
+                    <p><code>grid-template-row</code> define the number and height of rows</p>
+                    <p><code>grid-template-column</code> define the number and width of columns</p>
+                    <p><code>grid-gap / grid-row-gap / grid-column-gap</code> define the gutter between grid items</p>
+                    <p><code>fr</code> create flexible grid tracks. It represents a fraction of the available space in the grid container. You can combine fr with others units like px or %</p>
+                    <p><code>grid-template-areas</code> define names for your grid, e.g. header, content, sidebar and footer</p>
+                    <p><code>grid-column-start / grid-column-end </code> place the items in the grid</p>
+                    <p><code>grid-auto-rows / grid-auto-columns / grid-auto-flow</code> auto place items</p>
+                    <p><code>justify-items / align-items</code> align the items inside your grid</p>
 
                     <!-- CSS Interview Questions -->
                     <h4 id="interview-question-css">CSS Interview Questions</h4>
