@@ -2,9 +2,8 @@
 
 let translateDayOfWeek = () => {
     let date = new Date();
-    let day = date.getDay();
     
-    switch(day) {
+    switch(date.getDay()) {
       case 1:
         console.log("Montag");
         break;
