@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Exercise sticky footer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <footer>
+        <style>
+            body {
+                margin: 0px;
+            }
 
-        </footer>
+            ul {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            li {
+                background-color: #aaa;
+                text-align: center;
+                list-style-type: none;
+                margin-right: 5px;
+                padding: 8px;
+            }
+
+            .stretch {
+                flex: 1;
+            }
+            
+        </style>
+    </head>
+​
+    <body>
+        <section>
+            <ul>
+                <li>text</li>
+                <li>Some text</li>
+                <li>longer text</li>
+                <li class="stretch">Stretch</li>
+                <li>Fixed text</li>
+            </ul>
+        </section>
         
     </body>
 </html>
