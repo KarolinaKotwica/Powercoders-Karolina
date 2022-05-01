@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>About Me</title>
+    <style>
+        .list-item {
+            color: red;
+        }
+    </style>
+</head>
+    <body>
+        <h1>About Me</h1>
+        <ul>
+            <li>Nickname: <span id="nickname"></span>
+            <li>Favorites: <span id="favorites"></span>
+            <li>Hometown: <span id="hometown"></span>
+        </ul>
+    </body>
+
+    <script>
+        let nickname = document.getElementById('nickname');
+        let favorites = document.getElementById('favorites');
+        let hometown = document.getElementById('hometown');
+        let listItem = document.querySelectorAll('li');
+        let ulList = document.querySelector('ul');
+
+        let newImage = document.createElement('img');
+        newImage.src = "photo_karolina.jpg";
+        ulList.appendChild(newImage);
+
+        nickname.innerHTML = "Karolina";
+        favorites.innerHTML = "Powercoders";
+        hometown.innerHTML = "Zurich";
+
+        document.body.style.fontFamily = "Arial, Sans-serif";
+
+        for(let i = 0; i < listItem.length; i++) {
+            listItem[i].classList.add('list-item');
+        }
+
+    </script>
+</html>

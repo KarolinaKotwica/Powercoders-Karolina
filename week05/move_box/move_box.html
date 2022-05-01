@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            #container {
+                width: 100%;
+            }
+            #box {
+                width: 250px;
+                height: 250px;
+                background: #cdf;
+                padding: 20px;
+                border-radius: 50%;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <section id="container">
+            <div id="box"></div>
+        </section>
+        
+
+        <script>
+
+            document.getElementById('container').addEventListener('wheel', scrollFunction);
+
+            function scrollFunction() {
+
+                const animateBox = [
+                { transform: 'translateY(0)' },
+                { transform: 'translateY(100%)' }
+                ];
+
+                this.animate(animateBox, {
+                duration: 1000,
+                animationFillMode: "forwards"
+                });
+            }
+
+        </script>
+
+    </body>
+</html>
