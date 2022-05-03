@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logoNav {
+    display: flex;
+    padding: 1.6em;
+    justify-content: left;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+#logoNav p {
+    font-size: 28px;
+    padding: 10px;
+}
+
+nav {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+}
+
+nav ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 1em;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #aaa;
+    font-size: 26px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+}
+
+#blog {
+    width: 70%;
+    background-color: #ddd;
+}
+
+article {
+    padding: 5em;
+    background-color: #fff;
+    width: 80%;
+    margin: 35px auto;
+}
+
+h1 {
+    color: mediumaquamarine;
+    font-size: 2em;
+}
+
+article p {
+    color: #aaa;
+    font-size: 1.2em;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.adv {
+    border: 1px solid #aaa;
+    padding: 2em;
+    margin: 10px auto;
+}
+
+footer {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5em;
+    font-size: 22px;
+}
+
+footer ol li {
+    padding: 0.3em;
+    text-align: right;
+}
+
+footer ol {
+    margin: 35px 0;
+}
+
+
+/* MEDIA QUERY */
+/* Small devices */
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #logoNav {
+        justify-content: center;
+    }
+
+    #container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #blog {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer ol {
+        margin: auto;
+        padding: 2em;
+    }
+
+    footer ol li {
+        text-align: center;
+    }
+}
+
+/* tablets */
+@media only screen and (min-width: 601px) and (max-width: 860px) {
+    aside {
+        display: none;
+    }
+
+    nav {
+        width: 35%;
+    }
+
+    #container,
+    #blog {
+        width: 100%;
+    }
+
+    footer ol {
+        margin: auto;
+        padding: 2em;
+    }
+
+    footer ol li {
+        text-align: center;
+    }
+}

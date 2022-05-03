@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <main>
+            <p id="books"></p>
+
+            <!-- <h2>You can add new book:</h2> -->
+            <form action="#">
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" placeholder="Author..">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" placeholder="Title of book..">
+                <label for="price">Price:</label>
+                <input type="number" name="price" id="price" placeholder="price">
+                <button type="submit" id="submit" onclick="addBook();">Add new book</button>
+            </form>
+
+        </main>
+
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

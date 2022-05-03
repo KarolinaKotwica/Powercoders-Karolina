@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+
+        <script>
+
+            var numbers = [1,4,6,3,2];
+
+            function weekNumbersToWords(number) {
+                
+                    switch (number) {
+                        case number.indexOf(1):
+                            number[number.indexOf(1)] = "Monday";
+                        case number.indexOf(2):
+                            number[number.indexOf(2)] = "Tuesday";
+                        case number.indexOf(3):
+                            number[number.indexOf(3)] = "Wednesday";
+                        case number.indexOf(4):
+                            number[number.indexOf(4)] = "Thursday";
+                        case number.indexOf(5):
+                            number[number.indexOf(5)] = "Thursday";
+                        case number.indexOf(6):
+                            number[number.indexOf(6)] = "Friday";
+                        case number.indexOf(7):
+                            number[number.indexOf(7)] = "Saturday";
+                        case number.indexOf(8):
+                            number[number.indexOf(8)] = "Sunday";
+                    }
+
+                console.log(number);
+                return number;
+            }
+
+            weekNumbersToWords(numbers);
+
+        </script>
+    </body>
+</html>

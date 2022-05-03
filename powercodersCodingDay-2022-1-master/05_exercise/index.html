@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <script>
+
+            let days = ["Monday","Thursday","Saturday","Wednesday","Tuesday"];
+
+            function getLastValue(day) {
+                day.sort();
+                let lastValue = day.slice(-1);
+                console.log(lastValue);
+            }
+
+            getLastValue(days);
+
+        </script>
+    </body>
+</html>

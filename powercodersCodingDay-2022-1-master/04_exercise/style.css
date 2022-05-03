@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form, #books {
+    padding: 3em;
+    font-size: 26px;
+    width: 35%;
+}
+
+#books {
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
