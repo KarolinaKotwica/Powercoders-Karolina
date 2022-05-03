@@ -1,0 +1,11 @@
+img {
+    border-radius: 50%;
+    display: block;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+    object-fit: cover;
+}
+input {
+    display: block;
+}

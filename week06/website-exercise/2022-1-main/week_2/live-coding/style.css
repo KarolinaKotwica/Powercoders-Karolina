@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+    /* alternative: 
+    no rule needed */
+}
+
+body {
+    display: grid;
+    height: 100%;
+    /* alternative: 
+    height: 100vh;*/
+    margin: 0;
+    place-items: center;
+}
+
+img {
+    border-radius: 50%;
+    height: 300px;
+    object-fit: cover;
+    width: 300px;
+}
+
+a {
+    color: red;
+    font-size: 20px;
+
+    transition: all 1s linear;
+}
+
+a.active {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    font-size: 40px;
+}
+
+#paragraph.paragraph {
+    color: orchid;
+}
+
+p#paragraph {
+    color: sandybrown;
+}
+
+p:last-child {
+    color: pink;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>I rock HTML</title>
+    <link href="style.css" rel="stylesheet">
+ </head>
+ <body>
+    <form action="" name="shopping" method="post">
+        <fieldset name="invoice">
+            <legend>Invoice details</legend>
+            <label>Salutation *</label>
+            <input type="radio" name="sal" id="male" value="m" required> <label for="male">Mr</label>
+            <input type="radio" name="sal" id="female" value="f"> <label for="female">Ms</label>
+        </fieldset>    
+        <small>* required fields</small>
+    </form>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="about-us.html#team">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>I rock in HTML</h1>
+        <form name="search" action="search.html" method="get">
+            <input type="search">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <button>
+                click me
+            </button>
+        </form>
+        <form name="contact" action="contact.html" method="post">
+            <label>Choose a browser</label>
+            <select>
+                <option value="Edge">Edge</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Opera">Opera</option>
+                <option value="Safari">Safari</option>
+            </select><br><br>
+            <label for="browser">Choose another browser</label>
+            <input list="browsers" name="browser" id="browser" placeholder="Start typing and select the browser from the list">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <input type="color">
+            <input type="email" required>
+            <br>
+            <label for="checkbox">check the checkbox</label>
+            <input type="checkbox" id="checkbox">
+            <input type="url">
+            <input type="password">
+            <input type="tel">
+            <input type="number">
+            <input type="date">
+            <input type="range">
+            <input type="radio">
+            <input type="file">
+            <input type="reset">
+            <input type="submit">
+        </form>
+
+        <p><b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Commodi hic neque deserunt consequatur dolorum possimus quod earum, vitae magnam tenetur animi.<br><i>Officiis hic tenetur odio</i><br><em>Officiis hic tenetur odio</em>.</p>
+        <ol>
+            <li>Learn HTML</li>
+            <li>Then CSS</li>
+            <li>Then JavaScript</li>
+        </ol>
+        <img src="me.jpg" alt="This is me, Susanne">
+        <ul>
+            <li>bananas</li>
+            <li>apples</li>
+        </ul>
+        <p><strong>Lorem</strong>, ipsum dolor sit amet consectetur adipisicing elit. Beatae corporis molestias itaque, temporibus ipsa odio vero dignissimos. Qui voluptates repudiandae tenetur commodi nihil facere earum dignissimos totam accusantium debitis corporis quas, et quo fugiat consequuntur nesciunt ipsum veniam accusamus rem temporibus enim? Officiis laborum modi est delectus? Dolore quasi reiciendis sint, optio velit vel alias debitis eum aperiam nesciunt fuga, voluptate eaque sit facilis nihil id! In velit assumenda neque nostrum repellendus similique magni voluptatem magnam aliquid, iure dolorem laboriosam maiores exercitationem rerum sequi recusandae error cupiditate laborum omnis nisi suscipit eos. Ea ut officia odit cupiditate quidem in hic debitis, nesciunt neque nostrum quos eum animi, consequatur soluta. Deleniti id nemo, ducimus nihil voluptas magnam aspernatur, est minima eaque ipsam quos magni alias quam maiores aperiam consectetur placeat asperiores error, animi quis repudiandae omnis facilis odit rem. Odio dignissimos pariatur illum est aspernatur deleniti ab id voluptates delectus rem quae laudantium nesciunt possimus esse culpa perferendis a quaerat soluta quibusdam accusamus, dolorum ducimus impedit tenetur. Numquam dolorum velit esse optio veniam a est corrupti soluta recusandae cum et suscipit sapiente magnam dolore exercitationem in aut voluptatum tenetur, molestias, dolores illum unde. Doloremque ab deserunt, nostrum saepe natus nisi facilis.</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Susanne</td>
+                <td>König</td>
+            </tr>
+            <tr>
+                <th>Contact details</th>
+                <td>susanne.koenig@powercoders.org</td>
+                <td>0041 77878787878</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        &copy; 2022 | Susanne König
+    </footer>
+ </body>
+</html>

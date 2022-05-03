@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    background: red;
+    height: 250px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+}
+
+/* inline-block
+main {
+    background: blue;
+    display: inline-block;
+    width: 50%;
+}
+
+aside {
+    background: green;
+    display: inline-block;
+    width: 50%;
+}
+*/
+
+/* flex */
+body {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;  
+}
+
+h1 {
+    flex-basis: 100%;
+}
+
+main {
+    background: blue;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+aside {
+    background: green;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    flex-basis: 100%;
+}

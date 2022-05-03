@@ -1,0 +1,62 @@
+/*
+Validate a telephone number, as if written on an input form. Telephone numbers can be written as ten digits, or with dashes, spaces, or dots between the three segments, or with the area code parenthesized; both the area code and any white space between segments are optional.
+
+After questions client clarifies:
+only swiss numbers, no country code, it has to have 10 digits and can optionally have the other characters, 
+
+Constraints:
+============
+allowed characters: digits, spaces, dashes, dots, parentheses 
+only area code can be in parentheses
+spaces are optional, parentheses are optional
+number has to start with area code
+if phone number has parantheses, the first character in the input has to be (
+if phone number has no parantheses, the first charcater in the input has to be a 0
+the phone number has to have 10 digits, no more, no less
+string if all digits has a length of 10 characters, otherwise max 15 characters
+characters only allowed between segments: defined for number after area code, split in 2, 2 and 3
+input cannot be empty
+
+Possibilities:
+==============
+TRUE
+078 79 54 123
+(078) 79 54 123
+078 79-54-123
+078 79.54.123
+0787954123
+(078)-79-54-123
+(078)7954123
+(078) 79.54.123
+
+FALSE
+078-79-541-23
+078-79-(54)-123
+078-79-54-123
+(0787954123)
+890787954123
+abcduh
+...
+
+Input:
+======
+string, with characters and digits
+
+Output:
+======
+boolean, true or false
+
+Procedure:
+==========
+1. check if input is empty, min 10, max 15 characters
+> yes: check again with error message
+> no: go to next step
+2. looping through the string and check constraints for each character
+- first character either 0 or ( > if (, the ) needs to be at index 4 and the 2nd character has to be a 0
+- while looping we count the number of digits
+- the moment we find something wrong, e.g. not allowed character, character on th wrong position, etc. => output is false 
+
+
+*/
+
+

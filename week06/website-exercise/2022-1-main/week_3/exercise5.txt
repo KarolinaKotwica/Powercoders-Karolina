@@ -1,0 +1,33 @@
+# Find the day of the year for the given date. For example, January 1st would be 1, and December 31st is 365.
+
+# Input: date in specific format yyyy-mm-dd (day + month + year), e.g. 11th April 2022
+# Output: number (day of the year), e.g. 101
+
+# Constraints: 
+#- different number of days per month
+#- is it a leap year  
+#- max 366 
+#- min 1
+#- 12 months
+
+# 31 + 28 + 31 + 11 = 101
+# Steps:
+# - define months
+# - define days per month
+# - check leap year: add 1 to max days of February, change max days from 365 to 366
+# - get the input
+# - check the input: 
+
+
+GetDayOfYear
+    DEFINE months as list: 1-12
+    DEFINE daysPerMonth as list: 31,28,31,... 
+    DEFINE leapYear as true/false: default is false 
+
+    DISPLAY dateByUser as "Please add a date in the format yyyy-mm-dd, e.g. 2022-04-11"
+
+    IF dateByUser is empty or Not a Date 
+        PRINT "Please enter a correct date"
+    END IF 
+
+END GetDayOfYear

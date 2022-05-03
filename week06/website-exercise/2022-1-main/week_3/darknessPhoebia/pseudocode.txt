@@ -1,0 +1,47 @@
+> m + d: 2min
+< d: 1min (or m)
+> da + so: 5min
+< m: 2min (or d)
+> m + d: 2min
+= Total: 12min
+
+constraints
+===========
+2 people max per route
+12 min in total (1 torch only)
+specific speed of family members: slowest speed counts
+
+solution
+========
+slowest couple should use the tunnel only 1 time
+slowest need to go together: daughter and son 
+fastest ones for the return routes
+
+steps
+=====
+
+
+
+DarknessPhoebia
+    INITIALIZE maxTime as 12
+    INITIALIZE totalTime as 0
+    INITIALIZE speedFather as 1
+    INITIALIZE speedMother as 2
+    INITIALIZE speedSon as 4
+    INITIALIZE speedDaugther as 5
+    INITIALIZE maxPeople as 2
+    INITIALIZE peopleAtStart as 4
+    INITIALIZE peopleOnTheOtherSide as 0
+
+    INITIALIZE slowestCouple
+    INITIALIZE fastestCouple
+
+    Step1: Find out who the 2 fastest people are and store their slowest speed in fastestCouple
+    Steps ...
+#   Check on time constraint
+#   Check on maxPeople in tunnel 
+#   Check on peopleOnTheOtherSide
+
+    PRINT "Great, you found the solution. Well done."
+
+END DarknessPhoebia

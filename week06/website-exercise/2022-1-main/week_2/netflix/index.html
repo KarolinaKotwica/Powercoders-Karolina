@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="visuallyhidden">Navigation</h2>
+            <ul>
+                <li>
+                    <a href="#"><img src="img/netflix_logo.svg" alt="Netflix Logo"></a>
+                </li>
+                <li>
+                    <label for="lang">Language Switcher</label>
+                    <select id="lang" name="lang">
+                        <option value="de">Deutsch</option>
+                        <option value="fr">Français</option>
+                        <option selected value="en">English</option>
+                    </select>
+                </li>
+                <li>
+                    <a href="login/" class="btn">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+        <form action="signup/" name="membership" method="post">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <fieldset name="register-now">
+                <input type="email" name="email" id="email">
+                <label for="email">Email address</label>
+                <button type="submit">Get started &gt;</button>
+            </fieldset>
+        </form>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
