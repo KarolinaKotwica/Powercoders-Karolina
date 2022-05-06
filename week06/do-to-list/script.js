@@ -3,15 +3,8 @@
 // posibility to add new items 
 // change order / set priorituty to - do
 // // change status of to do list (open / done in progress)
-// <li class="item">
-// <input type="checkbox" name="todo1" id="todo1">
-// <label for="todo1">Item1</label>
-// </li>
 
 /*
-    array todos = array of objects
-
-
 OUTPUT: array of todo rendered as list item
 
     add todo
@@ -31,10 +24,9 @@ OUTPUT: array of todo rendered as list item
     event listener for button
 */
 
-
 let addNewItemButton = document.getElementById('addItem');
 let ulForm = document.querySelector('.form');
-
+let newItemValue = document.getElementById('newItem');
 
 function Todo(id, text, isDone=false) {
     this.id = id;
@@ -44,66 +36,80 @@ function Todo(id, text, isDone=false) {
 
 const todos = [];
 
-function isInputUnique() {
+function isInputUnique(value) {
     // return tru or false
     // loop through the todos and compare each newItem
     // if is unique -> return true else return false
-
-    return true;
+    for(let i = 0; i < todos.length; i++) {
+        if(value === todos[i].text) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    // return true;
 }
 
+
+
 function addTodo() {
-    let newItemValue = document.getElementById('newItem').value;
-
-    if(newItemValue != "" && isInputUnique(newItemValue)) {
+    if(newItemValue.value != "" && isInputUnique(newItemValue.value)) {
         let lengthOfTodos = todos.length;
-        let item = new Todo(lengthOfTodos+1, newItemValue);
+        let item = new Todo(lengthOfTodos+1, newItemValue.value);
+        // add item to the array
         todos.push(item);
+        // call function which display the list
         displayList(todos);
-
-        // console log results
-        console.log(item);
-        console.log(todos);
+        // set value of input of empty string
+        newItemValue.value = '';
+        
     } else {
         console.log("Input is empty or value is not unique.");
     }
 }
 
-let displayList = todos => {
-    //we have to remove existing elements
-    //clearList();
-
-    let listItems = document.querySelectorAll('input[type="checkbox"]');
-
-    // add eventListener
-
-    listItems.forEach(item => {
-        item.addEventListener('click', () => {
-            todos.isDone ? false : true;
-        })
-    })
-
-    // create checkbox with label
-    let checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    let label = document.createElement('label');
-    // loop through the object and render in HTML
+let removeElement = id => {
     for(let i = 0; i < todos.length; i++) {
-        // create li
-        let li = document.createComment('li');
-        li.textContent = todos.text;
-        //append li to ul
-        ulForm.appendChild(li);
-        // li.appendChild(checkbox);
-        // li.appendChild(label);
+        if(todos[i].isDone) {
+            //remove elements from array
+            todos.splice(id, 1);
+            //display new list
+            displayList(todos);
+        }
     }
 }
 
-let changeStatus = () => {
-    // check if input is checked
-    // set property isDone = true
-    // if is -> check id -> remove item
-    // if not..
+let displayList = todos => {
+    //we have to remove existing elements
+    ulForm.innerHTML = "";
+
+    // loop through the object and render in HTML
+    for(let i = 0; i < todos.length; i++) {
+
+        // create checkbox with label
+        let checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = i;
+        let label = document.createElement('label');
+ 
+        // create li
+        let li = document.createElement('li');
+
+
+        // add eventListener
+ 
+        checkbox.addEventListener('click', id => {
+            todos[i].isDone = true;
+            removeElement(id);
+        })
+
+        label.textContent = todos[i].text;
+        li.appendChild(checkbox);
+        li.appendChild(label);
+        
+        //append li to ul
+        ulForm.appendChild(li);
+    }
 }
 
 displayList(todos);

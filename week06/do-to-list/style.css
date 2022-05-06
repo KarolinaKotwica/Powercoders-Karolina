@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100%;
+}
+
+main {
+    width: 50%;
+    display: block;
+    margin: 5em auto;
+    text-align: center;
+}
+
+h1 {
+    padding: 1em;
+}
+
+form {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 1em;
+}
+
+label {
+    margin-left: 10px;
+}
+
