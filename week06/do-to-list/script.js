@@ -1,9 +1,3 @@
-// title
-// list of to do 
-// posibility to add new items 
-// change order / set priorituty to - do
-// // change status of to do list (open / done in progress)
-
 /*
 OUTPUT: array of todo rendered as list item
 
@@ -27,6 +21,7 @@ OUTPUT: array of todo rendered as list item
 let addNewItemButton = document.getElementById('addItem');
 let ulForm = document.querySelector('.form');
 let newItemValue = document.getElementById('newItem');
+let errorMessage = document.getElementById('error');
 
 function Todo(id, text, isDone=false) {
     this.id = id;
@@ -36,24 +31,40 @@ function Todo(id, text, isDone=false) {
 
 const todos = [];
 
-function isInputUnique(value) {
-    // return tru or false
-    // loop through the todos and compare each newItem
-    // if is unique -> return true else return false
-    for(let i = 0; i < todos.length; i++) {
-        if(value === todos[i].text) {
-            return false;
-        } else {
-            return true;
-        }
+// trigger button click on enter
+newItemValue.addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      addNewItemButton.click();
     }
-    // return true;
+  });
+
+
+let isInputUnique = newItem => {
+    //loop through the todos and compare each item to newItem
+    //if one item is equal to newItem > return false
+    //else > return true
+    console.log(todos);
+    if(todos.length != 0) {
+        for(let i = 0; i < todos.length; i++) {
+            // if element is the same like in array -> display error message
+            if(newItem === todos[i].text) {
+                errorMessage.textContent = "You have the same element in your to-do list.";
+                errorMessage.style.visibility = 'visible';
+                return false;
+            } else {
+                return true;
+            }
+        }
+    } else {
+        return true;
+    }
+    
 }
-
-
 
 function addTodo() {
     if(newItemValue.value != "" && isInputUnique(newItemValue.value)) {
+        errorMessage.style.visibility = "hidden";
         let lengthOfTodos = todos.length;
         let item = new Todo(lengthOfTodos+1, newItemValue.value);
         // add item to the array
@@ -64,7 +75,8 @@ function addTodo() {
         newItemValue.value = '';
         
     } else {
-        console.log("Input is empty or value is not unique.");
+        errorMessage.style.visibility = 'visible';
+        errorMessage.textContent = "Input is empty or value is not unique.";
     }
 }
 

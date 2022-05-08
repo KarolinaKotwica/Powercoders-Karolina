@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,8 @@
 
 body {
     width: 100%;
+    font-family: 'Indie Flower', cursive;
+    background-color: #f1f4fb;
 }
 
 main {
@@ -15,12 +19,52 @@ main {
     text-align: center;
 }
 
+#addItem {
+    padding: 1.3em;
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+    border: none;
+    background-color: #86aadc;
+    color: #fff;
+    margin-left: 1em;
+    transition: all .5s ease-in-out;
+}
+
+#addItem:hover {
+    cursor: pointer;
+    background-color: #769edb;
+}
+
+#newItem,
+#newItem:focus,
+#newItem:focus-visible,
+#newItem:active {
+    font-family: 'Indie Flower', cursive;
+    padding: .3em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+    font-size: 1.4em;
+    background-color: #f1f4fb;
+    transition: all .3s ease-in-out;
+}
+
+#newItem:active,
+#newItem:focus {
+    border-bottom: 2px solid #769edb;
+}
+
 h1 {
-    padding: 1em;
+    font-size: 48px
+}
+
+h1 span {
+    color: #86aadc;
 }
 
 form {
-    width: 30%;
+    width: 60%;
     height: auto;
     margin: 0 auto;
 }
@@ -29,9 +73,39 @@ ul li {
     list-style-type: none;
     text-align: left;
     margin-top: 1em;
+    font-size: 20px;
+    overflow-wrap: break-word;
 }
 
 label {
     margin-left: 10px;
 }
 
+#error {
+    visibility: hidden;
+    margin: 22px;
+    font-size: 25px;
+    color: red;
+}
+
+input[type='checkbox'] {
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    width: 1em;
+    height: 1em;
+    border: 3px solid #86aadc;
+    border-radius: 50%;
+    transform: translateY(.1em);
+}
+
+.idDone {
+    text-decoration: line-through;
+}
+
+/* Media query small device */
+@media only screen and (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+}
