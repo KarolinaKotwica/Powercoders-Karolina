@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" name="file" id="file">
+    <button id="submit">Get dimension</button>
+</body>
+
+    <script>
+
+        const getWidthAndHeightFromDataUrl = dataURL => new Promise(resolve => {
+            const img = new Image();
+            img.onload = () => {
+                resolve({
+                    width: img.width,
+                    height: img.height,
+                })
+                img.source = dataURL;
+            }
+        })
+
+        document.getElementById('submit').addEventListener('click', async () => {
+            const file = document.querySelector('[type="file"]').files[0];
+            if(!file) {
+                throw Error("You must to specify a file");
+            }
+
+            const fileAsDataUrl = window.URL.createObjectURL(url);
+
+            const dimensions = await getWidthAndHeightFromDataUrl(fileAsDataUrl);
+            
+        });
+
+    </script>
+
+</html>
