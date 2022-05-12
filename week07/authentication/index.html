@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+
+    <style>
+        form {
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            padding: 3em;
+            border-radius: 10px;
+        }
+        #message {
+            margin: 1em;
+        }
+        #login {
+            padding: 7px;
+            font-size: 16px;
+            color: blueviolet;
+            border: none;
+            border-bottom: 1px solid blueviolet;
+            outline: none;
+            margin-right: 1em;
+            transition: all .3s linear;
+        }
+        #login:focus-visible,
+        #login:active,
+        #login:focus {
+            border-bottom: 1px solid rgb(128, 54, 198);
+            outline: none;
+        }
+        #submit {
+            padding: 9px;
+            background-color: rgb(121, 61, 178);
+            color: #fff;
+            border: none;
+            transition: all .2s linear;
+        }
+        #submit:hover {
+            cursor: pointer;
+            background-color: rgb(128, 54, 198);
+        }
+        #message {
+            font-size: 1.7em;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#">
+        <input type="text" name="login" id="login" placeholder="login..">
+        <button type="button" id="submit">Login</button>
+    </form>
+    <div id="message"></div>
+    
+</body>
+
+<script>
+    
+    let message = document.getElementById('message');
+    let button = document.getElementById('submit');
+    
+
+    button.addEventListener('click', checkUser);
+
+    function checkUser() {
+        let inputValue = document.getElementById('login').value;
+       
+        if(!inputValue) {
+
+            return console.log('input value is empty');
+        }
+        fetch("users.json")
+        .then(response => response.json())
+        .then(json => {
+            
+
+            for(let i = 0; i < json.users.length; i++) {
+                
+                if(json.users[i].username === inputValue ) {
+                message.textContent = "Hello " + json.users[i].username;
+                break;
+                
+                } 
+                else {
+                    message.textContent = 'This login is not in our database.';
+                }
+            }
+            
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+</html>
