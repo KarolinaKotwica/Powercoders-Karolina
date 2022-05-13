@@ -44,7 +44,11 @@ let isInputUnique = newItem => {
     //loop through the todos and compare each item to newItem
     //if one item is equal to newItem > return false
     //else > return true
-    console.log(todos);
+
+    // fetch('https://jsonplaceholder.typicode.com/todos/1')
+    // .then(response => response.json())
+    // .then(json => console.log(json))
+    
     if(todos.length != 0) {
         for(let i = 0; i < todos.length; i++) {
             // if element is the same like in array -> display error message
@@ -80,11 +84,11 @@ function addTodo() {
     }
 }
 
-let removeElement = id => {
+let removeElement = () => {
     for(let i = 0; i < todos.length; i++) {
         if(todos[i].isDone) {
             //remove elements from array
-            todos.splice(id, 1);
+            todos.splice(i, 1);
             //display new list
             displayList(todos);
         }
