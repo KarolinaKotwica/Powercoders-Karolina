@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3em;
+}
+
+label {
+    font-size: 2em;
+    display: block;
+    margin: .5em 0;
+}
+
+#cities {
+    padding: .5em;
+    font-size: 1.2em;
+    background-color: #a6808c;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3%;
+}
+
+#submit {
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border-radius: 3%;
+    padding: .6em;
+    transition: all .2s linear;
+    margin: 10px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #a6808c;
+    color: #fff;
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    color: #a6808c;
+    font-size: 1.9em;
+}
+
+h2 {
+    color: #77666c;
+}
