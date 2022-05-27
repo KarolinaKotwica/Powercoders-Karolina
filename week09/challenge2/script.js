@@ -18,6 +18,7 @@ button.addEventListener('click', (e) => {
 
     output.innerText = '';
     desc.innerText = '';
+    error.innerText = '';
 
     // Fetch API
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cities}&units=metric&appid=ed7a9b706ac17d6ed8df62a13b9b9013`)

@@ -55,3 +55,7 @@ h1 {
 h2 {
     color: #77666c;
 }
+
+#errorMessage {
+    color: red;
+}
