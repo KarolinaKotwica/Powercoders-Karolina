@@ -84,3 +84,17 @@ img {
 .url a:hover {
     color: #b0395b;
 }
+
+.sortInputs {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+input[type='radio'] {
+    margin-right: 5px;
+}
+
+label {
+    margin-right: 25px;
+}

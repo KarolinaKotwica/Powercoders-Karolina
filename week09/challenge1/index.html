@@ -9,9 +9,18 @@
 </head>
 <body>
 
-    <form action="#">
+    <form>
         <h1>Search for the news you are interested in:</h1>
         <input type="search" name="search" id="search">
+
+        <div class="sortInputs">
+            <input type="radio" id="popularity" name="sort" value="popularity">
+            <label for="popularity">Popularity</label><br>
+
+            <input type="radio" id="date" name="sort" value="date">
+            <label for="date">Publishing date</label><br>
+        </div>
+
         <button id="button">Search</button>
     </form>
 

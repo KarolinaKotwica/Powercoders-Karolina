@@ -1,4 +1,4 @@
-let cities = document.getElementById('cities').value;
+let cities2 = document.getElementById('cities');
 let button = document.querySelector('button');
 let output = document.getElementById('output');
 let image = document.getElementById('image');
@@ -7,12 +7,17 @@ let desc = document.getElementById('description');
 
 button.addEventListener('click', (e) => {
     e.preventDefault();
+    let cities = cities2.value;
     // fetch
     // 1. returns a promise: I promise to let you know when the response
     // of my request is returned
     // 2. then it returns a response: with its own method json() to
     // parse the response
     // 3. then it returns a object: with the data of your AJAX call
+
+
+    output.innerText = '';
+    desc.innerText = '';
 
     // Fetch API
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cities}&units=metric&appid=ed7a9b706ac17d6ed8df62a13b9b9013`)
